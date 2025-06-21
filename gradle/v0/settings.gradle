@@ -10,3 +10,4 @@ pluginManagement {
 }
 
 include 'common', 'fabric', 'neoforge', 'forge', 'quilt'
+Create gradle/v0/settings.gradle with base config
