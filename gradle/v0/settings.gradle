@@ -1,29 +1,12 @@
 pluginManagement {
     repositories {
+        maven { url "https://maven.fabricmc.net/" }
+        maven { url "https://maven.architectury.dev/" }
+        maven { url "https://files.minecraftforge.net/maven/" }
+        maven { url "https://maven.quiltmc.org/repository/release/" }
         gradlePluginPortal()
-        maven { url = 'https://maven.fabricmc.net' }
-        maven { url = 'https://maven.minecraftforge.net' }
-        maven { url = 'https://maven.neoforged.net/releases' }
-        maven { url = 'https://maven.quiltmc.org/repository/release/' }
-        mavenCentral()
+        maven { url "https://maven.firstdark.dev/releases" }
     }
 }
 
-dependencyResolutionManagement {
-    repositories {
-        mavenCentral()
-        maven { url = 'https://maven.fabricmc.net' }
-        maven { url = 'https://maven.minecraftforge.net' }
-        maven { url = 'https://maven.neoforged.net/releases' }
-        maven { url = 'https://maven.quiltmc.org/repository/release/' }
-        maven { url = 'https://maven.architectury.dev' }
-    }
-}
-
-rootProject.name = "rockylib"
-
-include("common")
-include("fabric")
-include("forge")
-include("neoforge")
-include("quilt")
+include 'common', 'fabric', 'neoforge', 'forge', 'quilt'
