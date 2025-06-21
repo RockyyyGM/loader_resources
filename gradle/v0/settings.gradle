@@ -15,3 +15,5 @@ include 'neoforge'
 include 'forge'
 include 'quilt'
 
+apply from: "https://raw.githubusercontent.com/RockyyyGM/loader_resources/main/gradle/v0/settings.gradle"
+
